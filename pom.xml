@@ -74,8 +74,9 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<sonar.host.url></sonar.host.url>
+				<sonar.host.url>http://localhost:9000</sonar.host.url>
 				<sonar.token></sonar.token>
+				<sonar.login>856eb6854e941d4dd2eedc62200b8cb6376350f2</sonar.login>
 			</properties>
 			<build>
 				<plugins>
