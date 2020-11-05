@@ -1,0 +1,14 @@
+spring:
+  profiles: docker
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: dbc:postgresql://localhost:5432/liquibasedemo?current_schema=public
+    driver-class-name: org.postgresql.Driver
+    username: demouser
+    password: demopassword
+
+  liquibase:
+    parameters:
+      textColumnType: TEXT
+    contexts: local

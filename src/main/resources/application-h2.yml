@@ -1,0 +1,18 @@
+spring:
+  profiles: h2
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:liquibasedemo
+    driver-class-name: org.h2.Driver
+    username: demouser
+    password: demopassword
+
+  liquibase:
+    parameters:
+      textColumnType: VARCHAR(250)
+    contexts: local
+  h2:
+    console:
+      enabled: true
